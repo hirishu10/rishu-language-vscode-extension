@@ -1,0 +1,41 @@
+{
+  "name": "rishu-language-support",
+  "displayName": "Rishu Language Support",
+  "description": "VS Code syntax highlighting and basic editing support for the Rishu programming language.",
+  "version": "0.1.0",
+  "publisher": "rishu",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "rishu",
+        "aliases": [
+          "Rishu",
+          "rishu"
+        ],
+        "extensions": [
+          ".rc"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "rishu",
+        "scopeName": "source.rishu",
+        "path": "./syntaxes/rishu.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "rishu",
+        "path": "./snippets/rishu.json"
+      }
+    ]
+  }
+}
